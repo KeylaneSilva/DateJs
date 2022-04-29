@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function MostrarImagem(){
+            var now = new Date();
+            var dias = new Array("domingo.bmp", "segunda.bmp", "terca.bmp", "quarta.bmp", "teste.jpg", "sexta.bmp", "sábado.bmp");
+            document.img.src = dias[now.getDay()];
+        }
+    </script>
+</head>
+<body onload="MostrarImagem()">
+    <img src="" name="img">
+</body>
+</html>
+

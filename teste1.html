@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+    <title>Cadastro de clientes - teste 1</title>
+</head>
+<body>
+    <script>
+      var setDia = 0
+      var diaAtual = moment().format('DD/MM/YYYY')
+
+      function setDia(){
+        alert('aqui dentro')
+      }
+
+      var diaMais15 = moment().add(15, 'days').calendar();
+      console.log(diaAtual)
+      console.log(diaMais15)
+      if (diaAtual ==  diaMais15){
+        document.write("Lembrar o Sérgio de cortar o cabelo")
+      }else{
+        document.write ("Hoje também é dia de trabalho, mas pelo menos é final de semana") }
+      
+      setDia()
+
+
+      // var diaMais15 = (moment().add(15, 'days').calendar())
+      // document.write(diaAtual)
+      // console.log(diaMais15)
+
+    </script>
+
+</body>
+<br>
+<br>
+
+</html>
